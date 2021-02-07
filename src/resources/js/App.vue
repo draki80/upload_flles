@@ -5,21 +5,17 @@
 <script>
 import FilesOverview from './views/FilesOverview.vue'
     export default {
-  components: { FilesOverview },
-    props: {
-        user: {
-            type: Object,
-            required: true
+        components: { FilesOverview },
+        props: {
+            user: {
+                type: Object,
+                required: true
+            }
+        },
+        computed : {
+            getUser() {
+                return this.user
+            }
         }
-    },
-        mounted() {
-            console.log('Component mounted.', this.getUser)
-        }
-    ,
-    computed : {
-        getUser() {
-            return this.user
-        }
-    }
     }
 </script>

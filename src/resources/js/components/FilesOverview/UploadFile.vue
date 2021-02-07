@@ -23,7 +23,6 @@
         </v-btn>
         <p v-if="errorMessage">{{errorMessage}}</p>
     </div>
-
 </template>
 
 <script>
